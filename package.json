@@ -44,8 +44,8 @@
     "extend": "^2.0.1",
     "inherits": "~2.0.1",
     "kurento-client-core": "TribeMedia/kurento-client-core-js#master",
-    "kurento-client-elements": "Kurento/kurento-client-elements-js#master",
-    "kurento-client-filters": "Kurento/kurento-client-filters-js#master",
+    "kurento-client-elements": "TribeMedia/kurento-client-elements-js#master",
+    "kurento-client-filters": "TribeMedia/kurento-client-filters-js#master",
     "kurento-jsonrpc": "5.0.4",
     "promisecallback": "0.0.3",
     "reconnect-ws": "KurentoForks/reconnect-ws"
