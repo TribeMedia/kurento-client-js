@@ -1,11 +1,16 @@
 {
-  "name": "kurento-client",
+  "name": "tribemedia-kurento-client",
   "version": "6.0.0-dev",
-  "description": "Media API for the Kurento Web SDK",
+  "description": "TribeMedia version of Media API for the Kurento Web SDK",
   "homepage": "http://www.kurento.org",
   "license": "LGPL",
   "author": "Kurento <info@kurento.com> (http://kurento.org)",
   "contributors": [
+	{
+      "name": "Travis James",
+      "email": "travis@tribemedia.io",
+      "url": "http://www.tribemedia.io"
+    },
     {
       "name": "Jesús Leganés Combarro 'piranna'",
       "email": "piranna@gmail.com",
@@ -21,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "Kurento/kurento-client-js"
+    "url": "TribeMedia/kurento-client-js"
   },
   "bugs": {
     "email": "kurento@googlegroups.com"
