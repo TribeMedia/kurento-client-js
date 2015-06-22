@@ -40,12 +40,12 @@
     "es6-promise": "^2.3.0",
     "extend": "^2.0.1",
     "inherits": "~2.0.1",
-    "kurento-client-core": "github:tribemedia/kurento-client-core-js#master",
-    "kurento-client-elements": "github:tribemedia/kurento-client-elements-js#master",
-    "kurento-client-filters": "github:tribemedia/kurento-client-filters-js#master",
-    "kurento-jsonrpc": "5.0.4",
+    "tribemedia-kurento-client-core": "6.0.0-dev",
+    "tribemedia-kurento-client-elements": "6.0.0-dev",
+    "tribemedia-kurento-client-filters": "6.0.0-dev",
+    "tribemedia-kurento-jsonrpc": "5.0.4",
     "promisecallback": "0.0.4",
-    "reconnect-ws": "github:kurentoforks/reconnect-ws"
+    "tribemedia-reconnect-ws": "0.0.0"
   },
   "devDependencies": {
     "bower": "~1.4.1",
