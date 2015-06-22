@@ -1,6 +1,6 @@
 {
   "name": "tribemedia-kurento-client",
-  "version": "6.0.6-dev",
+  "version": "6.0.7-dev",
   "description": "TribeMedia version of Media API for the Kurento Web SDK",
   "homepage": "http://www.kurento.org",
   "license": "LGPL-3.0",
@@ -40,10 +40,10 @@
     "es6-promise": "^2.3.0",
     "extend": "^2.0.1",
     "inherits": "~2.0.1",
-    "tribemedia-kurento-client-core": "6.0.3-dev",
-    "tribemedia-kurento-client-elements": "6.0.1-dev",
-    "tribemedia-kurento-client-filters": "6.0.1-dev",
-    "tribemedia-kurento-jsonrpc": "5.0.5-dev",
+    "tribemedia-kurento-client-core": ">=6.0.3-dev",
+    "tribemedia-kurento-client-elements": ">=6.0.1-dev",
+    "tribemedia-kurento-client-filters": ">=6.0.1-dev",
+    "tribemedia-kurento-jsonrpc": ">=5.0.5-dev",
     "promisecallback": "0.0.4",
     "tribemedia-reconnect-ws": "0.0.2"
   },
