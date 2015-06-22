@@ -29,9 +29,9 @@
     "WebRTC"
   ],
   "bundleDependencies": [
-    "kurento-client-core",
-    "kurento-client-elements",
-    "kurento-client-filters"
+    "tribemedia-kurento-client-core",
+    "tribemedia-kurento-client-elements",
+    "tribemedia-kurento-client-filters"
   ],
   "dependencies": {
     "async": "~1.2.1",
