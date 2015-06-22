@@ -61,14 +61,14 @@ QUnit.asyncTest('Creation', function (assert) {
 
     assert.notEqual(player, undefined, 'player');
 
-    self.pipeline.create('RecorderEndpoint', {
+    return self.pipeline.create('RecorderEndpoint', {
       uri: URL_SMALL
     }, function (error, recorder) {
       if (error) return onerror(error);
 
       assert.notEqual(recorder, undefined, 'recorder');
 
-      player.connect(recorder, function (error) {
+      return player.connect(recorder, function (error) {
         assert.equal(error, undefined, 'connect');
 
         if (error) return onerror(error);
@@ -76,7 +76,8 @@ QUnit.asyncTest('Creation', function (assert) {
         QUnit.start();
       });
     });
-  });
+  })
+  .catch(onerror)
 });
 
 /**
@@ -121,7 +122,7 @@ QUnit.asyncTest('Transactional API', function () {
         uri: URL_SMALL
       });
 
-      player.connect(recorder);
+      return player.connect(recorder);
     },
     function (error) {
       QUnit.equal(error, undefined, 'transaction ended');
@@ -131,7 +132,8 @@ QUnit.asyncTest('Transactional API', function () {
       player.release();
 
       QUnit.start();
-    });
+    })
+    .catch(onerror)
 });
 
 /**
@@ -197,4 +199,53 @@ QUnit.asyncTest('Early transaction', function () {
 
     QUnit.start();
   });
+});
+
+/**
+ * Create object from a declarative description of them
+ */
+QUnit.asyncTest('Create objects from descriptor object', function(assert)
+{
+  assert.expect(4);
+
+  var elements =
+  [
+    {
+      type: 'MediaPipeline'
+    },
+    {
+      type: 'PlayerEndpoint',
+      params:
+      {
+        uri: URL_SMALL,
+        mediaPipeline: 0
+      }
+    },
+    {
+      type: 'RecorderEndpoint',
+      params:
+      {
+        uri: URL_SMALL,
+        mediaPipeline: 0
+      }
+    }
+  ]
+
+  this.kurento.create(elements, true, function(error, elements)
+  {
+    if (error) throw error
+
+    assert.equal(error, undefined)
+
+    var pipeline = elements[0]
+    var player   = elements[1]
+    var recorder = elements[2]
+
+    assert.notEqual(pipeline, undefined, 'pipeline')
+    assert.notEqual(player,   undefined, 'player')
+    assert.notEqual(recorder, undefined, 'recorder')
+
+    QUnit.start()
+  })
+  .catch(onerror)
 });
