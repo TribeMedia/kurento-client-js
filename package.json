@@ -43,7 +43,7 @@
     "tribemedia-kurento-client-core": "6.0.0-dev",
     "tribemedia-kurento-client-elements": "6.0.0-dev",
     "tribemedia-kurento-client-filters": "6.0.0-dev",
-    "tribemedia-kurento-jsonrpc": "5.0.4",
+    "tribemedia-kurento-jsonrpc": "5.0.5-dev",
     "promisecallback": "0.0.4",
     "tribemedia-reconnect-ws": "0.0.0"
   },
