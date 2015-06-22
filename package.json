@@ -1,6 +1,6 @@
 {
   "name": "tribemedia-kurento-client",
-  "version": "6.0.2-dev",
+  "version": "6.0.3-dev",
   "description": "TribeMedia version of Media API for the Kurento Web SDK",
   "homepage": "http://www.kurento.org",
   "license": "LGPL-3.0",
